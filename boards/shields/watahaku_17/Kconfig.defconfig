@@ -2,7 +2,7 @@
 if SHIELD_WATAHAKU_17_LEFT || SHIELD_WATAHAKU_17_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "watahaku-17"
+    default "watahaku17"
 
 config ZMK_SPLIT
     default y
