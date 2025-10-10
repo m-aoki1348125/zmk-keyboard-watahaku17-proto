@@ -1,0 +1,5 @@
+if(CONFIG_SHIELD_WATAHAKU_17_LEFT OR CONFIG_SHIELD_WATAHAKU_17_RIGHT)
+  zephyr_library()
+  zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+  zephyr_library_sources(src/board.c)
+endif()

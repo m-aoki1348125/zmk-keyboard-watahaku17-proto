@@ -1,0 +1,6 @@
+
+config SHIELD_WATAHAKU_17_LEFT
+    def_bool $(shields_list_contains,watahaku_17_left)
+
+config SHIELD_WATAHAKU_17_RIGHT
+    def_bool $(shields_list_contains,watahaku_17_right)
