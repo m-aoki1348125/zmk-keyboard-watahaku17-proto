@@ -20,8 +20,8 @@
 
         layer_0 {
             bindings = <
-  &kp Q      &kp W      &kp E      &kp R      &kp T                   &kp Y         &kp O       &kp I      &kp U      &kp Y
-  &kp A      &kp S      &kp D      &kp F      &kp G      &kp H        &kp J         &kp L       &kp K      &kp J      &kp H      &kp X
+  &kp Q      &kp W      &kp E      &kp R      &kp T                   &kp P         &kp O       &kp I      &kp U      &kp Y
+  &kp A      &kp S      &kp D      &kp F      &kp G      &kp TAB      &kp MINUS     &kp L       &kp K      &kp J      &kp H      &kp LEFT_WIN
   &kp Z      &kp X      &kp C      &kp V      &kp B      &kp SPACE    &kp QUESTION  &kp PERIOD  &kp COMMA  &kp M      &kp N      &kp ENTER
   &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp RSHFT    &kp RSHFT     &kp RSHFT   &kp RSHFT  &kp RSHFT  &kp RSHFT  &kp RSHFT
             >;
