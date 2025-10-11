@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 / {
     combos {
@@ -12,6 +13,16 @@
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
             layers = <2>;
+        };
+    };
+
+    // Auto mouse layer configuration
+    input_processors {
+        auto_mouse_layer: auto_mouse_layer {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            require-prior-idle-ms = <500>;  // Require 500ms idle before activation
+            excluded-positions = <28 29>;   // Don't deactivate layer on combo keys
         };
     };
 
