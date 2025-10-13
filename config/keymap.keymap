@@ -25,6 +25,13 @@
             require-prior-idle-ms = <500>;  // Require 500ms idle before activation
             excluded-positions = <1 2 3 10 11 12 13 14>;   // Don't deactivate layer on combo keys
         };
+
+        auto_scroll_layer: auto_scroll_layer {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            require-prior-idle-ms = <150>;  // Shorter idle time for scroll mode
+            excluded-positions = <>;  // Deactivate on any key press
+        };
     };
 
     keymap {
@@ -44,7 +51,7 @@
   &trans  &trans  &mkp MB3  &trans    &trans            &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &mkp MB2  &mkp MB1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans    &trans    &mo 4   &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -63,6 +70,15 @@
   &kp F6        &kp F7        &kp F8      &kp F9   &kp F10  &kp LEFT    &kp DOWN  &kp UP     &kp RIGHT  &kp TAB   &kp F11  &kp F12
   &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans   &trans   &kp SQT     &kp DQT   &kp GRAVE  &kp TILDE  &kp PIPE  &trans   &trans
   &trans        &trans        &kp DEL     &kp TAB  &trans   &trans      &trans    &trans     &trans     &trans    &trans   &trans
+            >;
+        };
+
+        scroll {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
