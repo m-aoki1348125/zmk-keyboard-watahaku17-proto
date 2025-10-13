@@ -2,25 +2,11 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-/ {
-    // Scroll mode listener (triggered when layer 4 is active)
-    trackball_scroll_listener: trackball_scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <
-            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &zip_xy_to_scroll_mapper
-        >;
-        layers = <4>;  // Only active on layer 4
-    };
-};
-
 &trackball_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &auto_mouse_layer 1 2000  // Activate layer 1 for 2 seconds on movement
     >;
-    layers = <0 1 2 3>;  // Active on all layers except scroll layer
 };
 
 &size_s_transform {
