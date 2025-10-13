@@ -1,6 +1,7 @@
 #include "watahaku_17.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <scroll-snap.dtsi>
 
 &trackball_listener {
     // Normal mode: Balanced speed (1.5x)
@@ -16,9 +17,21 @@
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 4  // 1/4x scroll speed
+            &zip_scroll_snap  // Snap scroll to nearest axis
+            &zip_scroll_scaler 1 8  // 1/8x scroll speed
         >;
     };
+};
+
+// Customize scroll snap behavior
+&zip_scroll_snap {
+    x-threshold = <5 8>;           // Snap to X if |y/x| < 5/8 (0.625)
+    y-threshold = <1 1>;           // Snap to Y if |y/x| > 1
+    require-n-samples = <8>;       // Collect 8 samples before snapping (faster response)
+    immediate-snap-threshold = <1000>;  // Snap immediately if movement exceeds 1000
+    lock-duration-ms = <150>;      // Lock direction for 150ms
+    lock-for-next-n-events = <8>;  // Keep direction for next 8 events
+    idle-reset-timeout-ms = <250>; // Reset after 250ms idle
 };
 
 &size_s_transform {
