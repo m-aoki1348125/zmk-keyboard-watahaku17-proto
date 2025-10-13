@@ -12,7 +12,10 @@
       "Bash(cat:*)",
       "Read(//tmp/**)",
       "Read(//mnt/c/Users/**)",
-      "mcp__serena__get_symbols_overview"
+      "mcp__serena__get_symbols_overview",
+      "WebSearch",
+      "WebFetch(domain:zmk.dev)",
+      "WebFetch(domain:github.com)"
     ],
     "deny": [],
     "ask": []
