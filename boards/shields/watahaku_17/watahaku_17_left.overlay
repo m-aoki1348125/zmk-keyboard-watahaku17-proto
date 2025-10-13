@@ -7,4 +7,12 @@
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &auto_mouse_layer 1 2000  // Activate layer 1 for 2 seconds on movement
     >;
+
+    scroller {
+        layers = <2>;
+        input-processors = <
+            &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+            &zip_xy_to_scroll_mapper
+        >;
+    };
 };
