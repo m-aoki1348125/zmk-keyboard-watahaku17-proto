@@ -31,7 +31,7 @@
         layer_0 {
             bindings = <
   &kp Q      &kp W         &kp E   &kp R   &kp T                           &kp Y                  &kp U          &kp I    &kp O      &kp P
-  &kp A      &kp S         &kp D   &kp F   &kp G   &kp LC(TAB)             &kp RS(RG(LEFT_WIN))   &kp H          &kp J    &kp K      &kp L          &kp MINUS
+  &kp A      &kp S         &kp D   &kp F   &kp G   &kp LC(TAB)             &kp RS(RG(S))          &kp H          &kp J    &kp K      &kp L          &mt RCTRL MINUS
   &kp Z      &kp X         &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &mt RIGHT_SHIFT ENTER  &kp N          &kp M    &kp COMMA  &kp PERIOD     &kp SLASH
   &kp LCTRL  &kp LEFT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1            &kp BACKSPACE  &kp DEL  &kp RCTRL  &kp RIGHT_ALT  &kp ESCAPE
             >;
@@ -66,10 +66,10 @@
 
         symbol {
             bindings = <
-  &trans  &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans            &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-  &trans  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans    &trans  &kp SLASH         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
-  &trans  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans    &trans  &kp ASTERISK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH
-  &trans  &trans         &trans                &trans                 &trans  &trans    &trans  &trans            &trans            &trans            &trans            &trans
+  &trans     &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE             &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
+  &kp TILDE  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans    &trans  &kp SLASH         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
+  &trans     &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &trans    &trans  &kp ASTERISK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH
+  &trans     &trans         &trans                &trans                 &trans             &trans    &trans  &trans            &trans            &trans            &trans            &trans
             >;
         };
 
