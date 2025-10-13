@@ -1,7 +1,30 @@
 #include "watahaku_17.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <dt-bindings/input/input-event-codes.h>
 #include <scroll-snap.dtsi>
+
+/ {
+    // Custom scaler for horizontal scroll (1/32x)
+    scroll_x_scaler: scroll_x_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_HWHEEL>;
+        scale-multiplier = <1>;
+        scale-divisor = <32>;
+    };
+
+    // Custom scaler for vertical scroll (1/8x)
+    scroll_y_scaler: scroll_y_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_WHEEL>;
+        scale-multiplier = <1>;
+        scale-divisor = <8>;
+    };
+};
 
 &trackball_listener {
     // Normal mode: Balanced speed (1.5x)
@@ -17,8 +40,9 @@
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
-            &zip_scroll_snap  // Snap scroll to nearest axis
-            &zip_scroll_scaler 1 8  // 1/8x scroll speed
+            &zip_scroll_snap       // Snap scroll to nearest axis
+            &scroll_x_scaler       // X-axis: 1/32x scroll speed
+            &scroll_y_scaler       // Y-axis: 1/8x scroll speed
         >;
     };
 };
