@@ -5,6 +5,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        mouse_gesture: mouse_gesture {
+            compatible = "zmk,behavior-mouse-gesture";
+            #binding-cells = <0>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
