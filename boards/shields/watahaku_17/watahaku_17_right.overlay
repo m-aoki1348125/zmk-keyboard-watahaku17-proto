@@ -68,25 +68,25 @@
     // Move window left (Win + Left)
     window_left {
         pattern = <GESTURE_LEFT>;
-        bindings = <&kp LG(LEFT)>;
+        bindings = <&kp LG(LEFT_ARROW)>;
     };
 
     // Move window right (Win + Right)
     window_right {
         pattern = <GESTURE_RIGHT>;
-        bindings = <&kp LG(RIGHT)>;
+        bindings = <&kp LG(RIGHT_ARROW)>;
     };
 
     // Maximize window (Win + Up)
     window_maximize {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LG(UP)>;
+        bindings = <&kp LG(UP_ARROW)>;
     };
 
     // Minimize/Restore window (Win + Down)
     window_minimize {
         pattern = <GESTURE_DOWN>;
-        bindings = <&kp LG(DOWN)>;
+        bindings = <&kp LG(DOWN_ARROW)>;
     };
 };
 
