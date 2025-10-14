@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <scroll-snap.dtsi>
+#include <mouse-gesture.dtsi>
 
 / {
     input_processors {
@@ -29,6 +30,7 @@
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &zip_xy_scaler 3 2  // 1.5x speed
+        &zip_mouse_gesture  // Mouse gesture for window management
         &auto_mouse_layer 1 2000  // Activate layer 1 for 2 seconds on movement
     >;
 
@@ -54,6 +56,38 @@
     lock-duration-ms = <150>;      // Lock direction for 150ms
     lock-for-next-n-events = <8>;  // Keep direction for next 8 events
     idle-reset-timeout-ms = <250>; // Reset after 250ms idle
+};
+
+// Configure mouse gesture for window management
+&zip_mouse_gesture {
+    stroke-size = <250>;           // Stroke size for gesture recognition
+    enable-eager-mode;             // Execute immediately when pattern matches
+    idle-timeout-ms = <150>;       // Wait 150ms before executing
+    gesture-cooldown-ms = <500>;   // Cooldown to prevent double gestures
+
+    // Move window left (Win + Left)
+    window_left {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LG(LEFT)>;
+    };
+
+    // Move window right (Win + Right)
+    window_right {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LG(RIGHT)>;
+    };
+
+    // Maximize window (Win + Up)
+    window_maximize {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LG(UP)>;
+    };
+
+    // Minimize/Restore window (Win + Down)
+    window_minimize {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(DOWN)>;
+    };
 };
 
 &size_s_transform {
