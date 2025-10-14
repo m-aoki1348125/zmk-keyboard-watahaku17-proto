@@ -15,17 +15,17 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <19 40 20>;
+            key-positions = <19 20>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <7 40 8>;
+            key-positions = <7 8>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <39 13 12>;
+            key-positions = <13 12>;
         };
 
         paste {
@@ -65,7 +65,7 @@
 
         alt_tab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <2 3 39>;
+            key-positions = <2 3>;
         };
 
         win_tab {
