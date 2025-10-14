@@ -10,67 +10,68 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 15 27>;
+            key-positions = <0 15 34>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <19 40 20>;
+            key-positions = <19 20>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <7 40 8>;
+            key-positions = <7 8>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
-            key-positions = <39 13 12>;
+            key-positions = <13 12>;
+            layers = <3>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <25 24 39>;
+            key-positions = <25 24>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
-            key-positions = <23 24 39>;
+            key-positions = <23 24>;
         };
 
         save {
             bindings = <&kp LC(S)>;
-            key-positions = <11 12 39>;
+            key-positions = <11 12>;
         };
 
         ctl_f {
             bindings = <&kp LC(F)>;
-            key-positions = <18 19 40>;
+            key-positions = <18 19>;
         };
 
         ctl_shift_f {
             bindings = <&kp LC(LS(F))>;
-            key-positions = <6 7 40>;
+            key-positions = <6 7>;
         };
 
         ctl_z {
             bindings = <&kp LC(Z)>;
-            key-positions = <30 31 40>;
+            key-positions = <30 31>;
         };
 
         ctl_y {
             bindings = <&kp LC(Y)>;
-            key-positions = <31 32 40>;
+            key-positions = <31 32>;
         };
 
         alt_tab {
             bindings = <&kp LA(TAB)>;
-            key-positions = <2 3 39>;
+            key-positions = <2 3>;
         };
 
         win_tab {
             bindings = <&kp LG(TAB)>;
-            key-positions = <1 2 39>;
+            key-positions = <1 2>;
         };
     };
 
@@ -88,7 +89,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        main_layer0 {
             bindings = <
   &kp Q      &kp W         &kp E   &kp R   &kp T                           &kp Y                  &kp U          &kp I    &kp O      &kp P
   &kp A      &kp S         &kp D   &kp F   &kp G   &kp LC(TAB)             &kp RS(RG(S))          &kp H          &kp J    &kp K      &kp L          &mt RCTRL MINUS
@@ -99,10 +100,10 @@
 
         mouse {
             bindings = <
-  &trans         &trans  &mouse_gesture  &trans    &trans            &trans  &trans  &trans  &trans  &trans
-  &trans         &mo 2   &mkp MB2        &mkp MB1  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans         &trans  &trans          &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &mkp MB3       &trans  &trans          &trans    &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &trans            &trans  &trans  &trans  &trans  &trans
+  &trans  &mo 2               &mkp MB2  &mkp MB1             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans              &trans    &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans              &trans    &trans               &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -117,19 +118,19 @@
 
         num {
             bindings = <
-  &trans    &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &trans                  &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-  &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END  &trans         &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-  &trans    &trans              &trans          &trans               &trans   &trans         &trans       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-  &mo 6     &trans              &trans          &trans               &trans   &lt 5 LANG2    &lt 5 LANG1  &trans        &trans        &kp NUMBER_0  &kp PERIOD    &trans
+  &kp LS(LEFT_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)            &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+  &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans    &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+  &kp LC(Z)           &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(Y)            &mo 6     &trans       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+  &trans              &kp LC(A)           &trans          &trans               &trans               &trans    &lt 5 LANG1  &trans        &trans        &kp NUMBER_0  &kp PERIOD    &trans
             >;
         };
 
         symbol {
             bindings = <
-  &trans     &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE             &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-  &kp TILDE  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans    &trans  &kp SLASH         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
-  &trans     &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &trans    &trans  &kp ASTERISK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH
-  &trans     &trans         &trans                &trans                 &trans             &trans    &trans  &trans            &trans            &trans            &trans            &trans
+  &trans     &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE                  &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
+  &kp TILDE  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans         &trans  &kp SLASH         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
+  &trans     &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &trans         &trans  &kp ASTERISK      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH
+  &trans     &trans         &trans                &trans                 &trans             &lt 5 LANG1    &trans  &trans            &trans            &trans            &trans            &trans
             >;
         };
 
