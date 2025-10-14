@@ -10,7 +10,67 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
+            key-positions = <0 15 27>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <19 40 20>;
+        };
+
+        shift-tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <7 40 8>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <39 13 12>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <25 24 39>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <23 24 39>;
+        };
+
+        save {
+            bindings = <&kp LC(S)>;
+            key-positions = <11 12 39>;
+        };
+
+        ctl-F {
+            bindings = <&kp LC(F)>;
+            key-positions = <18 19 40>;
+        };
+
+        ctl-shift-F {
+            bindings = <&kp LC(LS(F))>;
+            key-positions = <6 7 40>;
+        };
+
+        ctl-z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <30 31 40>;
+        };
+
+        ctl-y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <31 32 40>;
+        };
+
+        alt-tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <2 3 39>;
+        };
+
+        win-tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <1 2 39>;
         };
     };
 
