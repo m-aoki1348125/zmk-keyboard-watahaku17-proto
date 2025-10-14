@@ -10,7 +10,7 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 15 27>;
+            key-positions = <0 15 34>;
         };
 
         tab {
@@ -30,37 +30,37 @@
 
         paste {
             bindings = <&kp LC(V)>;
-            key-positions = <25 24 39>;
+            key-positions = <25 24>;
         };
 
         cut {
             bindings = <&kp LC(X)>;
-            key-positions = <23 24 39>;
+            key-positions = <23 24>;
         };
 
         save {
             bindings = <&kp LC(S)>;
-            key-positions = <11 12 39>;
+            key-positions = <11 12>;
         };
 
         ctl_f {
             bindings = <&kp LC(F)>;
-            key-positions = <18 19 40>;
+            key-positions = <18 19>;
         };
 
         ctl_shift_f {
             bindings = <&kp LC(LS(F))>;
-            key-positions = <6 7 40>;
+            key-positions = <6 7>;
         };
 
         ctl_z {
             bindings = <&kp LC(Z)>;
-            key-positions = <30 31 40>;
+            key-positions = <30 31>;
         };
 
         ctl_y {
             bindings = <&kp LC(Y)>;
-            key-positions = <31 32 40>;
+            key-positions = <31 32>;
         };
 
         alt_tab {
@@ -70,7 +70,7 @@
 
         win_tab {
             bindings = <&kp LG(TAB)>;
-            key-positions = <1 2 39>;
+            key-positions = <1 2>;
         };
     };
 
