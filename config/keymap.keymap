@@ -118,10 +118,10 @@
 
         num {
             bindings = <
-  &trans     &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &trans               &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-  &kp HOME   &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END    &trans    &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-  &kp LC(Z)  &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(Y)  &trans    &trans       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-  &mo 6      &trans              &trans          &trans               &trans     &trans    &lt 5 LANG1  &trans        &trans        &kp NUMBER_0  &kp PERIOD    &trans
+  &kp LS(LEFT_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)            &trans       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+  &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans    &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+  &kp LC(Z)           &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(Y)            &mo 6     &trans       &kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+  &trans              &kp LC(A)           &trans          &trans               &trans               &trans    &lt 5 LANG1  &trans        &trans        &kp NUMBER_0  &kp PERIOD    &trans
             >;
         };
 
