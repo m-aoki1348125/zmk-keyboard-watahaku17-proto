@@ -99,7 +99,7 @@
 
         mouse {
             bindings = <
-  &kp LG(TAB)      &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp LA(TAB)            &trans  &trans  &trans  &trans  &trans
+  &kp LG(TAB)      &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp TAB                &trans  &trans  &trans  &trans  &trans
   &kp LC(LS(TAB))  &mo 2               &mkp MB2  &mkp MB1             &kp LC(TAB)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
   &trans           &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
   &trans           &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
