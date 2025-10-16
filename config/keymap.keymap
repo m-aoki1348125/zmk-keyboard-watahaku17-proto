@@ -81,7 +81,7 @@
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
             require-prior-idle-ms = <500>;  // Require 500ms idle before activation
-            excluded-positions = <1 2 3 10 11 12 13 14>;   // Don't deactivate layer on combo keys
+            excluded-positions = <0 1 2 3 4 10 11 12 13 14>;   // Don't deactivate layer on combo keys
         };
     };
 
