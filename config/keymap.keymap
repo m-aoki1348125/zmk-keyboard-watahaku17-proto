@@ -18,7 +18,7 @@
             key-positions = <19 20>;
         };
 
-        shift-tab {
+        shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <7 8>;
         };
@@ -43,32 +43,32 @@
             key-positions = <11 12>;
         };
 
-        ctl-F {
+        ctl_f {
             bindings = <&kp LC(F)>;
             key-positions = <18 19>;
         };
 
-        ctl-shift-F {
+        ctl_shift_f {
             bindings = <&kp LC(LS(F))>;
             key-positions = <6 7>;
         };
 
-        ctl-z {
+        ctl_z {
             bindings = <&kp LC(Z)>;
             key-positions = <30 31>;
         };
 
-        ctl-y {
+        ctl_y {
             bindings = <&kp LC(Y)>;
             key-positions = <31 32>;
         };
 
-        alt-tab {
+        alt_tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <2 3>;
         };
 
-        win-tab {
+        win_tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <1 2>;
         };
