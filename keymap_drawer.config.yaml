@@ -26,6 +26,3 @@ draw_config:
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-
-layout:
-  qmk_info_json: config/info.json
