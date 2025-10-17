@@ -1,0 +1,28 @@
+# keymap-drawer configuration for watahaku-17
+parse_config:
+  mark_alternate_layer_activators: true
+  sticky_label: '⬤'
+
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 24
+  combo_h: 20
+  key_rx: 6
+  key_ry: 6
+  n_columns: 1
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 2
+
+  dark_mode: auto
+
+  svg_style: |
+    /* Custom styling */
+    svg.keymap {
+        font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    }
+
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
