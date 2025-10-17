@@ -20,5 +20,5 @@ jobs:
       config_path: "keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
       parse_args: ""
-      draw_args: ":--qmk-info-json config/info.json --qmk-layout LAYOUT"
+      draw_args: "keymap:--qmk-info-json config/info.json --qmk-layout LAYOUT"
       commit_message: "keymap-drawer: Update keymap visualizations"
