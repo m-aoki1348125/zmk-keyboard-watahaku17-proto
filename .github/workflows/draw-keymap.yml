@@ -21,3 +21,4 @@ jobs:
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: ""
+      commit_message: "keymap-drawer: Update keymap visualizations"
