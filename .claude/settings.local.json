@@ -18,7 +18,8 @@
       "WebFetch(domain:github.com)",
       "mcp__serena__search_for_pattern",
       "Read(//mnt/c/work/keyboard/watahaku-17/**)",
-      "Bash(keymap dump-config:*)"
+      "Bash(keymap dump-config:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
