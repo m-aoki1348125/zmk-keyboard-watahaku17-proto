@@ -51,8 +51,6 @@
 
     // Auto mouse layer configuration
 
-    #ifndef KEYMAP_DRAWER
-
     input_processors {
         auto_mouse_layer: auto_mouse_layer {
             compatible = "zmk,input-processor-temp-layer";
@@ -61,8 +59,6 @@
             excluded-positions = <0 1 2 3 4 10 11 12 13 14>;   // Don't deactivate layer on combo keys
         };
     };
-
-    #endif
 
     keymap {
         compatible = "zmk,keymap";
