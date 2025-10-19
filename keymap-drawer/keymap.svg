@@ -4,6 +4,21 @@ svg.keymap {
     font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
 }
 
+/* Layer label visibility improvements */
+text.label {
+    font-weight: bold !important;
+    font-size: 18px !important;
+    fill: #000000 !important;
+}
+
+/* Dark mode layer labels */
+@media (prefers-color-scheme: dark) {
+    text.label {
+        fill: #ffffff !important;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    }
+}
+
 @media (prefers-color-scheme: dark) {
 svg.keymap { fill: #d1d6db; }
 rect.key { fill: #3f4750; }
@@ -190,8 +205,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(504, 252) rotate(-7.5)" class="key keypos-40">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
 <text x="0" y="0" class="key tap">英数</text>
-<a href="#symbol">
-<text x="0" y="22" class="key hold layer-activator"><tspan style="font-size: 60%">symb…</tspan></text>
+<a href="#Symbol">
+<text x="0" y="22" class="key hold layer-activator"><tspan style="font-size: 60%">Symb…</tspan></text>
 </a></g>
 <g transform="translate(560, 252)" class="key keypos-41">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
@@ -822,8 +837,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1425)" class="layer-symbol">
-<text x="0" y="28" class="label" id="symbol">symbol:</text>
+<g transform="translate(30, 1425)" class="layer-Symbol">
+<text x="0" y="28" class="label" id="Symbol">Symbol:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 84)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
