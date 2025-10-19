@@ -1,6 +1,6 @@
 # watahaku-17 ZMK Firmware (JIS Layout)
 
-テスト用ZMKファームウェア（JIS配列対応）
+テスト用ZMKファームウェア（JIS対応）
 
 ## Keymap
 
