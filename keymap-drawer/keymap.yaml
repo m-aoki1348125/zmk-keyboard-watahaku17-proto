@@ -228,7 +228,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: 英数, h: Function}
+  - {t: LANGUAGE 2, h: Function}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
