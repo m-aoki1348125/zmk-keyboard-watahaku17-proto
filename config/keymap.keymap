@@ -1,15 +1,15 @@
+// WARNING: Keymap Editor will automatically reorder includes alphabetically.
+// If you use Keymap Editor, you MUST manually move the following line to the end:
+//   #include <layout_shift_kp_override.dtsi>
+// This include MUST come after <behaviors.dtsi> to work correctly.
+
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <layout_shift.dtsi>
-
-// Override &kp to use layout-shift implementation
-&kp {
-    compatible = "zmk,behavior-layout-shift-key-press";
-    label = "LAYOUT_SHIFT_KEY_PRESS";
-};
+#include <layout_shift_kp_override.dtsi>
 
 / {
 
