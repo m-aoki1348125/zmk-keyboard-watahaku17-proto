@@ -213,6 +213,17 @@ draw_config:
         }
     }
 
+    /* Fix text alignment - center the text properly */
+    text.key {
+        text-anchor: middle !important;
+        dominant-baseline: middle !important;
+    }
+
+    /* Ensure tap and hold text are centered */
+    text.key.tap, text.key.hold {
+        text-anchor: middle !important;
+    }
+
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
 
   glyph_urls:
