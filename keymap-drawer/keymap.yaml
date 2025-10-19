@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: keymap}
 layers:
-  main_layer0:
+  Base:
   - Q
   - W
   - E
@@ -40,14 +40,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: かな, h: num}
-  - {t: 英数, h: symbol}
+  - {t: かな, h: Number}
+  - {t: 英数, h: Symbol}
   - ⌫
   - ⌦
   - RIGHT ALT
   - Ctl+Shift
   - Ctl+AltGr+Shift
-  mouse:
+  Mouse:
   - {t: ▽, type: trans}
   - Alt+←
   - Middle
@@ -59,7 +59,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Sft+↹
-  - scroll
+  - Scroll
   - Middle
   - Left
   - Ctl+↹
@@ -94,7 +94,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  scroll:
+  Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -141,7 +141,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  num:
+  Number:
   - Sft+←
   - Ctl+←
   - ↑
@@ -169,7 +169,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+Y
-  - set
+  - Settings
   - {t: ▽, type: trans}
   - '*'
   - '1'
@@ -182,13 +182,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: 英数, h: function}
+  - {t: 英数, h: Function}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   - .
   - {t: ▽, type: trans}
-  symbol:
+  Symbol:
   - {t: ▽, type: trans}
   - '|'
   - '{'
@@ -228,14 +228,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: 英数, h: function}
+  - {t: 英数, h: Function}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  function:
+  Function:
   - {t: ▽, type: trans}
   - Sft+Gui+←
   - Gui+↑
@@ -282,7 +282,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  set:
+  Settings:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -333,24 +333,32 @@ combos:
 - p: [0, 15, 34]
   k: BT Clear
   a: bottom
+  draw_separate: true
 - p: [12, 13]
   k: ↹
   a: top
+  draw_separate: true
 - p: [12, 11]
   k: Sft+↹
   a: top
+  draw_separate: true
 - p: [18, 19]
   k: Ctl+F
   a: top
+  draw_separate: true
 - p: [6, 7]
   k: Ctl+Sft+F
   a: top
+  draw_separate: true
 - p: [30, 31]
   k: Ctl+Z
   a: bottom
+  draw_separate: true
 - p: [31, 32]
   k: Ctl+Y
   a: bottom
+  draw_separate: true
 - p: [1, 2]
   k: Gui+↹
   a: top
+  draw_separate: true
