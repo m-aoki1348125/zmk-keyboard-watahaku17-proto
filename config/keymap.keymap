@@ -5,23 +5,13 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <layout_shift.dtsi>
 
-/ {
-    behaviors {
-        // Keep the original key_press behavior for ZMK core components
-        original_key_press: original_key_press {
-            compatible = "zmk,behavior-key-press";
-            #binding-cells = <1>;
-            label = "KEY_PRESS";
-        };
+// Override &kp to use layout-shift implementation
+&kp {
+    compatible = "zmk,behavior-layout-shift-key-press";
+    label = "LAYOUT_SHIFT_KEY_PRESS";
+};
 
-        // Override the existing &kp behavior to use layout-shift implementation
-        // This allows automatic JIS layout conversion without changing keymap bindings
-        kp: key_press {
-            compatible = "zmk,behavior-layout-shift-key-press";
-            #binding-cells = <1>;
-            label = "LAYOUT_SHIFT_KEY_PRESS";
-        };
-    };
+/ {
 
     combos {
         compatible = "zmk,combos";
