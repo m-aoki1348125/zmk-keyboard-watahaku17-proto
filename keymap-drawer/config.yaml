@@ -23,14 +23,14 @@ parse_config:
 
   # Combo display settings
   zmk_combos:
-    bt_clear: {align: bottom}
-    tab: {align: top}
-    shift_tab: {align: top}
-    ctl_f: {align: top}
-    ctl_shift_f: {align: top}
-    ctl_z: {align: bottom}
-    ctl_y: {align: bottom}
-    win_tab: {align: top}
+    bt_clear: {align: bottom, draw_separate: true}
+    tab: {align: top, draw_separate: true}
+    shift_tab: {align: top, draw_separate: true}
+    ctl_f: {align: top, draw_separate: true}
+    ctl_shift_f: {align: top, draw_separate: true}
+    ctl_z: {align: bottom, draw_separate: true}
+    ctl_y: {align: bottom, draw_separate: true}
+    win_tab: {align: top, draw_separate: true}
 
   # Keycode display name customization
   zmk_keycode_map:
@@ -183,6 +183,12 @@ draw_config:
   n_columns: 1
   separate_combo_diagrams: true
   combo_diagrams_scale: 2
+
+  shrink_wide_legends: 5
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  inner_pad_w: 2
+  inner_pad_h: 2
 
   dark_mode: auto
 

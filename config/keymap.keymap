@@ -64,6 +64,7 @@
         compatible = "zmk,keymap";
 
         main_layer0 {
+            display-name = "Base";
             bindings = <
   &kp Q         &kp W             &kp E   &kp R   &kp T                           &kp Y                  &kp U          &kp I    &kp O          &kp P
   &kp A         &kp S             &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))          &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
@@ -73,6 +74,7 @@
         };
 
         mouse {
+            display-name = "Mouse";
             bindings = <
   &trans           &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp LG(TAB)            &trans  &trans  &trans  &trans  &trans
   &kp LC(LS(TAB))  &mo 2               &mkp MB2  &mkp MB1             &kp LC(TAB)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -82,6 +84,7 @@
         };
 
         scroll {
+            display-name = "Scroll";
             bindings = <
   &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -91,6 +94,7 @@
         };
 
         num {
+            display-name = "Number";
             bindings = <
   &kp LS(LEFT_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)            &kp COLON    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
   &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans    &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
@@ -100,6 +104,7 @@
         };
 
         symbol {
+            display-name = "Symbol";
             bindings = <
   &trans     &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE                  &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
   &kp TILDE  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans         &trans  &kp SLASH         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
@@ -109,6 +114,7 @@
         };
 
         function {
+            display-name = "Function";
             bindings = <
   &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT_ARROW))  &trans            &trans  &kp F7  &kp F8  &kp F9  &kp F10
   &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans    &trans  &trans  &kp F4  &kp F5  &kp F6   &kp F11
@@ -118,6 +124,7 @@
         };
 
         set {
+            display-name = "Settings";
             bindings = <
   &trans  &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans
   &trans  &bt BT_SEL 4  &trans        &trans        &trans  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &trans  &trans
