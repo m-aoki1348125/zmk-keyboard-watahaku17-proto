@@ -6,15 +6,20 @@ svg.keymap {
 
 /* Layer label visibility improvements */
 text.label {
-    font-weight: bold !important;
+    font-weight: 900 !important;
     font-size: 18px !important;
     fill: #000000 !important;
+    stroke: #000000 !important;
+    stroke-width: 0.5px !important;
+    paint-order: stroke fill !important;
 }
 
 /* Dark mode layer labels */
 @media (prefers-color-scheme: dark) {
     text.label {
         fill: #ffffff !important;
+        stroke: #ffffff !important;
+        stroke-width: 0.5px !important;
         text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
     }
 }
@@ -1009,9 +1014,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(280, 252) rotate(7.5)" class="key keypos-39">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">LANG…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">2</tspan>
-</text>
+<text x="0" y="0" class="key tap">英数</text>
 <a href="#Function">
 <text x="0" y="22" class="key hold layer-activator"><tspan style="font-size: 60%">Func…</tspan></text>
 </a></g>
@@ -1266,9 +1269,9 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(588, 42)" class="key trans keypos-6">
-<rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(588, 42)" class="key keypos-6">
+<rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;stu…</tspan></text>
 </g>
 <g transform="translate(644, 28)" class="key trans keypos-7">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key trans"/>
