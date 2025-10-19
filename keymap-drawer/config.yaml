@@ -184,11 +184,11 @@ draw_config:
   separate_combo_diagrams: true
   combo_diagrams_scale: 2
 
-  shrink_wide_legends: 5
-  glyph_tap_size: 14
-  glyph_hold_size: 12
-  inner_pad_w: 2
-  inner_pad_h: 2
+  shrink_wide_legends: 3
+  glyph_tap_size: 11
+  glyph_hold_size: 10
+  inner_pad_w: 4
+  inner_pad_h: 4
 
   dark_mode: auto
 
