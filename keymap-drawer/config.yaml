@@ -1,0 +1,205 @@
+# keymap-drawer configuration for watahaku-17
+parse_config:
+  # Custom behavior mappings
+  raw_binding_map:
+    '&tog_ls': {t: JIS, h: toggle}
+    '&tog_ls_on': JIS ON
+    '&tog_ls_off': JIS OFF
+    '&mkp LCLK': Left Click
+    '&mkp RCLK': Right Click
+    '&mkp MCLK': Middle Click
+    '&mkp MB3': Middle
+    '&mkp MB2': Middle
+    '&mkp MB1': Left
+    '&bt BT_CLR': BT Clear
+    '&bt BT_CLR_ALL': BT Clear All
+    '&bt BT_SEL 0': BT 1
+    '&bt BT_SEL 1': BT 2
+    '&bt BT_SEL 2': BT 3
+    '&bt BT_SEL 3': BT 4
+    '&bt BT_SEL 4': BT 5
+    '&sys_reset': Reset
+    '&bootloader': Boot
+
+  # Combo display settings
+  zmk_combos:
+    bt_clear: {align: bottom, draw_separate: true}
+    tab: {align: top, draw_separate: true}
+    shift_tab: {align: top, draw_separate: true}
+    ctl_f: {align: top, draw_separate: true}
+    ctl_shift_f: {align: top, draw_separate: true}
+    ctl_z: {align: bottom, draw_separate: true}
+    ctl_y: {align: bottom, draw_separate: true}
+    win_tab: {align: top, draw_separate: true}
+
+  # Keycode display name customization
+  zmk_keycode_map:
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    LEFT_GUI: Gui
+    LEFT_WIN: Win
+    LSHFT: Shift
+    RSHFT: Shift
+    LEFT_SHIFT: Shift
+    RIGHT_SHIFT: Shift
+    ESC: Esc
+    ESCAPE: Esc
+    SPACE: ␣
+    BSPC: ⌫
+    BACKSPACE: ⌫
+    RET: ⏎
+    ENTER: ⏎
+    TAB: ↹
+    DEL: ⌦
+    DELETE: ⌦
+    UP: ↑
+    DOWN: ↓
+    LEFT: ←
+    RIGHT: →
+    LEFT_ARROW: ←
+    RIGHT_ARROW: →
+    UP_ARROW: ↑
+    DOWN_ARROW: ↓
+    PG_UP: Page ↑
+    PG_DN: Page ↓
+    HOME: Home
+    END: End
+    LANG1: 英数
+    LANG2: かな
+
+    # Symbol keys
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: "'"
+    APOSTROPHE: "'"
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: \
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: ','
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: '='
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    SLASH: /
+    GRAVE: '`'
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT: '['
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: '-'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: ']'
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: ''''
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+
+    # Number keys
+    NUMBER_0: '0'
+    NUMBER_1: '1'
+    NUMBER_2: '2'
+    NUMBER_3: '3'
+    NUMBER_4: '4'
+    NUMBER_5: '5'
+    NUMBER_6: '6'
+    NUMBER_7: '7'
+    NUMBER_8: '8'
+    NUMBER_9: '9'
+    N0: '0'
+    N1: '1'
+    N2: '2'
+    N3: '3'
+    N4: '4'
+    N5: '5'
+    N6: '6'
+    N7: '7'
+    N8: '8'
+    N9: '9'
+
+    # Function keys
+    F1: F1
+    F2: F2
+    F3: F3
+    F4: F4
+    F5: F5
+    F6: F6
+    F7: F7
+    F8: F8
+    F9: F9
+    F10: F10
+    F11: F11
+    F12: F12
+
+  mark_alternate_layer_activators: true
+  sticky_label: '⬤'
+
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 24
+  combo_h: 20
+  key_rx: 6
+  key_ry: 6
+  n_columns: 1
+  separate_combo_diagrams: true
+  combo_diagrams_scale: 2
+
+  shrink_wide_legends: 5
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  inner_pad_w: 2
+  inner_pad_h: 2
+
+  dark_mode: auto
+
+  svg_style: |
+    /* Custom styling */
+    svg.keymap {
+        font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    }
+
+  footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
