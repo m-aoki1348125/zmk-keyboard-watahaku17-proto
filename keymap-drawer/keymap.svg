@@ -4,6 +4,21 @@ svg.keymap {
     font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
 }
 
+/* Layer label visibility improvements */
+text.label {
+    font-weight: bold !important;
+    font-size: 18px !important;
+    fill: #000000 !important;
+}
+
+/* Dark mode layer labels */
+@media (prefers-color-scheme: dark) {
+    text.label {
+        fill: #ffffff !important;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    }
+}
+
 @media (prefers-color-scheme: dark) {
 svg.keymap { fill: #d1d6db; }
 rect.key { fill: #3f4750; }
