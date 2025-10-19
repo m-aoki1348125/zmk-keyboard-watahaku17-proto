@@ -19,6 +19,17 @@ text.label {
     }
 }
 
+/* Fix text alignment - center the text properly */
+text.key {
+    text-anchor: middle !important;
+    dominant-baseline: middle !important;
+}
+
+/* Ensure tap and hold text are centered */
+text.key.tap, text.key.hold {
+    text-anchor: middle !important;
+}
+
 @media (prefers-color-scheme: dark) {
 svg.keymap { fill: #d1d6db; }
 rect.key { fill: #3f4750; }
