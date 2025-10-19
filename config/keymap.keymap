@@ -145,10 +145,10 @@
         set {
             display-name = "Settings";
             bindings = <
-  &trans   &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans
-  &tog_ls  &bt BT_SEL 4  &trans        &trans        &trans  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-  &trans   &bt BT_SEL 0  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+  &trans   &trans        &trans        &trans        &trans                    &trans  &studio_unlock  &trans  &trans  &trans
+  &tog_ls  &bt BT_SEL 4  &trans        &trans        &trans  &bt BT_CLR_ALL    &trans  &trans          &trans  &trans  &trans  &trans
+  &trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
+  &trans   &bt BT_SEL 0  &trans        &trans        &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
     };

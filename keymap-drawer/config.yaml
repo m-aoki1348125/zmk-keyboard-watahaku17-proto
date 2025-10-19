@@ -200,15 +200,20 @@ draw_config:
 
     /* Layer label visibility improvements */
     text.label {
-        font-weight: bold !important;
+        font-weight: 900 !important;
         font-size: 18px !important;
         fill: #000000 !important;
+        stroke: #000000 !important;
+        stroke-width: 0.5px !important;
+        paint-order: stroke fill !important;
     }
 
     /* Dark mode layer labels */
     @media (prefers-color-scheme: dark) {
         text.label {
             fill: #ffffff !important;
+            stroke: #ffffff !important;
+            stroke-width: 0.5px !important;
             text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
         }
     }
