@@ -41,7 +41,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: かな, h: Number}
-  - {t: 英数, h: Symbol}
+  - {t: 英数, h: symbol}
   - ⌫
   - ⌦
   - RIGHT ALT
@@ -188,7 +188,7 @@ layers:
   - '0'
   - .
   - {t: ▽, type: trans}
-  Symbol:
+  symbol:
   - {t: ▽, type: trans}
   - '|'
   - '{'
@@ -209,7 +209,7 @@ layers:
   - /
   - $
   - '%'
-  - Ctrl
+  - ^
   - '-'
   - {t: ▽, type: trans}
   - ;
