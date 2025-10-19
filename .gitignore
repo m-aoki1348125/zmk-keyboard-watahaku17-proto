@@ -2,3 +2,5 @@ tmp/
 .claude/
 .serema/
 doc/
+keymap-drawer/keymap.svg
+keymap-drawer/keymap.yaml
