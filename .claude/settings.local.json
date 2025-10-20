@@ -20,7 +20,9 @@
       "Read(//mnt/c/work/keyboard/watahaku-17/**)",
       "Bash(keymap dump-config:*)",
       "Bash(curl:*)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Read(//dev/**)",
+      "Read(//mnt/c/**)"
     ],
     "deny": [],
     "ask": []
