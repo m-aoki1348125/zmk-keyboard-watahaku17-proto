@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
+  - {t: A, h: Ctrl}
+  - {t: S, h: Scroll}
   - D
   - F
   - G
@@ -29,14 +29,14 @@ layers:
   - V
   - B
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: Shift}
+  - {t: ⏎, h: Mouse}
   - N
   - M
-  - ','
+  - ':'
   - .
-  - /
-  - Win
-  - Ctl+Gui
+  - {t: /, h: Shift}
+  - Ctrl
+  - RIGHT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -55,7 +55,7 @@ layers:
   - Gui+↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Sft+↹
@@ -67,6 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,8 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -147,11 +147,11 @@ layers:
   - ↑
   - Ctl+→
   - Sft+→
-  - ':'
+  - '*'
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - +
   - Home
   - ←
   - ↓
@@ -171,11 +171,11 @@ layers:
   - Ctl+Y
   - Settings
   - {t: ▽, type: trans}
-  - '*'
+  - '0'
   - '1'
   - '2'
   - '3'
-  - +
+  - {t: ▽, type: trans}
   - Ctl+S
   - Ctl+A
   - {t: ▽, type: trans}
@@ -185,7 +185,7 @@ layers:
   - {t: 英数, h: Function}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
+  - ':'
   - .
   - {t: ▽, type: trans}
   Symbol:
@@ -242,10 +242,10 @@ layers:
   - Gui+Sft+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F10
+  - BRI MIN
+  - BRI DN
+  - BRI UP
+  - Gui+BRI MAX
   - {t: ▽, type: trans}
   - Gui+←
   - Gui+↓
@@ -254,21 +254,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - Gui+AltGr+K
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F4
   - F5
-  - F6
-  - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
+  - F10
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
