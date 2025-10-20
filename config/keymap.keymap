@@ -42,7 +42,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 11>;
+            key-positions = <2 3>;
         };
 
         ctl_f {
@@ -55,19 +55,9 @@
             key-positions = <6 7>;
         };
 
-        ctl_z {
-            bindings = <&kp LC(Z)>;
-            key-positions = <30 31>;
-        };
-
-        ctl_y {
-            bindings = <&kp LC(Y)>;
+        colon {
+            bindings = <&kp COLON>;
             key-positions = <31 32>;
-        };
-
-        win_tab {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <1 2>;
         };
     };
 
@@ -88,20 +78,20 @@
         main_layer0 {
             display-name = "Base";
             bindings = <
-  &kp Q        &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
-  &mt LCTRL A  &lt 2 S        &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
-  &kp Z        &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 1 ENTER    &kp N          &kp M    &kp COLON      &kp PERIOD           &mt RIGHT_SHIFT SLASH
-  &kp LCTRL    &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
+  &kp Q      &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
+  &kp A      &kp S          &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
+  &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 1 ENTER    &kp N          &kp M    &kp COMMA      &kp PERIOD           &mt RIGHT_SHIFT SLASH
+  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
             >;
         };
 
         mouse {
             display-name = "Mouse";
             bindings = <
-  &trans           &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp LG(TAB)            &trans  &trans  &kp PAGE_UP  &trans         &trans
-  &kp LC(LS(TAB))  &mo 2               &mkp MB2  &mkp MB1             &kp LC(TAB)  &trans    &trans  &trans  &trans       &kp PAGE_DOWN  &trans  &trans
-  &trans           &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
-  &trans           &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
+  &trans  &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp LG(TAB)            &trans  &trans  &kp PAGE_UP  &trans         &trans
+  &mo 2   &trans              &mkp MB2  &mkp MB1             &trans       &trans    &trans  &trans  &trans       &kp PAGE_DOWN  &trans  &trans
+  &trans  &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
+  &trans  &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
             >;
         };
 
@@ -152,6 +142,15 @@
   &tog_ls  &bt BT_SEL 4  &trans        &trans        &trans  &bt BT_CLR_ALL    &trans  &trans          &trans  &trans  &trans  &trans
   &trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
   &trans   &bt BT_SEL 0  &trans        &trans        &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

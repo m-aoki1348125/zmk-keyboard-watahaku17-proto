@@ -11,8 +11,8 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Ctrl}
-  - {t: S, h: Scroll}
+  - A
+  - S
   - D
   - F
   - G
@@ -32,7 +32,7 @@ layers:
   - {t: ⏎, h: Mouse}
   - N
   - M
-  - ':'
+  - ','
   - .
   - {t: /, h: Shift}
   - Ctrl
@@ -58,11 +58,11 @@ layers:
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+↹
   - Scroll
+  - {t: ▽, type: trans}
   - Middle
   - Left
-  - Ctl+↹
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,7 +105,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +122,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -329,6 +329,53 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  '7':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 15, 34]
   k: BT Clear
@@ -338,7 +385,7 @@ combos:
   k: ↹
   a: top
   draw_separate: true
-- p: [12, 11]
+- p: [2, 3]
   k: Sft+↹
   a: top
   draw_separate: true
@@ -350,15 +397,5 @@ combos:
   k: Ctl+Sft+F
   a: top
   draw_separate: true
-- p: [30, 31]
-  k: Ctl+Z
-  a: bottom
-  draw_separate: true
 - p: [31, 32]
-  k: Ctl+Y
-  a: bottom
-  draw_separate: true
-- p: [1, 2]
-  k: Gui+↹
-  a: top
-  draw_separate: true
+  k: ':'
