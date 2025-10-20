@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: Ctrl}
   - {t: S, h: Scroll}
   - D
   - F
@@ -242,10 +242,10 @@ layers:
   - Gui+Sft+→
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BRI MIN
   - BRI DN
   - BRI UP
-  - Gui+P
+  - Gui+BRI MAX
   - {t: ▽, type: trans}
   - Gui+←
   - Gui+↓

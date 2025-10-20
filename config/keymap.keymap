@@ -88,10 +88,10 @@
         main_layer0 {
             display-name = "Base";
             bindings = <
-  &kp Q      &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
-  &kp A      &lt 2 S        &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
-  &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 1 ENTER    &kp N          &kp M    &kp COLON      &kp PERIOD           &mt RIGHT_SHIFT SLASH
-  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
+  &kp Q        &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
+  &mt LCTRL A  &lt 2 S        &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
+  &kp Z        &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 1 ENTER    &kp N          &kp M    &kp COLON      &kp PERIOD           &mt RIGHT_SHIFT SLASH
+  &kp LCTRL    &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
             >;
         };
 
@@ -138,10 +138,10 @@
         function {
             display-name = "Function";
             bindings = <
-  &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT_ARROW))  &trans            &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP       &kp RG(P)
-  &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans    &trans  &trans  &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp RG(RA(K))
-  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans  &kp F4        &kp F5             &kp F10          &kp F12
-  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans  &trans        &trans             &trans           &trans
+  &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT_ARROW))  &trans            &trans  &kp C_BRI_MIN  &kp C_BRI_DN  &kp C_BRI_UP       &kp RG(C_BRI_MAX)
+  &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans    &trans  &trans         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp RG(RA(K))
+  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans         &kp F4        &kp F5             &kp F10            &kp F12
+  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans         &trans        &trans             &trans             &trans
             >;
         };
 
