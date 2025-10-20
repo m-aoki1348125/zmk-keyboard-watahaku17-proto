@@ -47,8 +47,8 @@
     // Normal mode: Standard speed (1.0x) with threshold filtering
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_threshold_filter 1 2    // Reduce to 50%: movements < 2 become 0
-        &zip_restore_scaler 2 1      // Restore to 1.0x (0.5 × 2 = 1.0)
+        &zip_threshold_filter 1 4    // Reduce to 25%: movements < 4 become 0
+        &zip_restore_scaler 4 1      // Restore to 1.0x (0.25 × 4 = 1.0)
         &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
     >;
 
@@ -59,8 +59,8 @@
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
             &zip_scroll_snap           // Snap scroll to nearest axis
-            &zip_scroll_x_scaler 1 64  // X-axis: 1/64x scroll speed (original setting)
-            &zip_scroll_y_scaler 1 24  // Y-axis: 1/24x scroll speed (original setting)
+            &zip_scroll_x_scaler 1 85  // X-axis: 1/85x scroll speed (3/4 of original: 64 × 4/3 ≈ 85)
+            &zip_scroll_y_scaler 1 32  // Y-axis: 1/32x scroll speed (3/4 of original: 24 × 4/3 = 32)
         >;
     };
 };
