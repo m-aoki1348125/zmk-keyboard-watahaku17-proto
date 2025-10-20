@@ -47,8 +47,8 @@
     // Normal mode: Standard speed (1.0x) with threshold filtering
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_threshold_filter 1 4    // Reduce to 25%: movements < 4 become 0
-        &zip_restore_scaler 4 1      // Restore to 1.0x (0.25 × 4 = 1.0)
+        &zip_threshold_filter 1 2    // Reduce to 50%: movements < 2 become 0
+        &zip_restore_scaler 2 1      // Restore to 1.0x (0.5 × 2 = 1.0)
         &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
     >;
 
