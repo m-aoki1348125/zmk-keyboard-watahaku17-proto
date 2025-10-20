@@ -22,15 +22,34 @@
             codes = <INPUT_REL_WHEEL>;
             track-remainders;
         };
+
+        // Threshold filter: movements < threshold are rounded to 0
+        zip_threshold_filter: zip_threshold_filter {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>, <INPUT_REL_Y>;
+            track-remainders;
+        };
+
+        // Restore scaler after threshold filtering
+        zip_restore_scaler: zip_restore_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>, <INPUT_REL_Y>;
+            track-remainders;
+        };
     };
 };
 
 &trackball_listener {
-    // Normal mode: Balanced speed (1.5x)
+    // Normal mode: Balanced speed (1.5x) with threshold filtering
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_xy_scaler 3 2  // 1.5x speed
-        &auto_mouse_layer 1 2000  // Activate layer 1 for 2 seconds on movement
+        &zip_threshold_filter 1 10   // Reduce to 10%: movements < 10 become 0
+        &zip_restore_scaler 30 2     // Restore to 1.5x (0.1 × 15 = 1.5)
+        &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
     >;
 
     // Layer 2: Scroll mode
@@ -40,8 +59,8 @@
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
             &zip_scroll_snap           // Snap scroll to nearest axis
-            &zip_scroll_x_scaler 1 64  // X-axis: 1/64x scroll speed
-            &zip_scroll_y_scaler 1 24  // Y-axis: 1/24x scroll speed
+            &zip_scroll_x_scaler 1 32  // X-axis: 1/32x scroll speed (doubled from 1/64 to compensate for CPI reduction)
+            &zip_scroll_y_scaler 1 12  // Y-axis: 1/12x scroll speed (doubled from 1/24 to compensate for CPI reduction)
         >;
     };
 };
