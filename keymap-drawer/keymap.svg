@@ -1086,7 +1086,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(588, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">BRI</tspan><tspan x="0" dy="1.2em">MIN</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 60%">BRIG…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MINI…</tspan>
 </text>
 </g>
 <g transform="translate(644, 28)" class="key keypos-7">
@@ -1104,7 +1104,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 84)" class="key keypos-9">
 <rect rx="6" ry="6" x="-24" y="-24" width="48" height="48" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 75%">Gui</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">+BRI</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">MAX</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 60%">BRIG…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MAXI…</tspan>
 </text>
 </g>
 <g transform="translate(28, 140)" class="key trans keypos-10">
