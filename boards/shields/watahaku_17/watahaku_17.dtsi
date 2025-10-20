@@ -137,6 +137,6 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
         power-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | NRF_GPIO_DRIVE_H1)>;
-        res-cpi = <608>;  // Minimum CPI (reduced from 1000 to prevent accidental auto-mouse layer activation) 
+        res-cpi = <1000>;  // Standard CPI (threshold filtering prevents accidental layer activation) 
     };
 };
