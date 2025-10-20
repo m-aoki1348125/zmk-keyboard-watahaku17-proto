@@ -59,8 +59,8 @@
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
             &zip_scroll_snap           // Snap scroll to nearest axis
-            &zip_scroll_x_scaler 1 32  // X-axis: 1/32x scroll speed (doubled from 1/64 to compensate for CPI reduction)
-            &zip_scroll_y_scaler 1 12  // Y-axis: 1/12x scroll speed (doubled from 1/24 to compensate for CPI reduction)
+            &zip_scroll_x_scaler 1 39  // X-axis: 1/39x scroll speed (adjusted for CPI 608: 64 * 0.608 ≈ 39)
+            &zip_scroll_y_scaler 1 15  // Y-axis: 1/15x scroll speed (adjusted for CPI 608: 24 * 0.608 ≈ 15)
         >;
     };
 };
