@@ -198,6 +198,25 @@ draw_config:
         font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
     }
 
+    /* Layer label visibility improvements */
+    text.label {
+        font-weight: 900 !important;
+        font-size: 18px !important;
+        fill: #000000 !important;
+        stroke: #000000 !important;
+        stroke-width: 0.5px !important;
+        paint-order: stroke fill !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        text.label {
+            fill: #ffffff !important;
+            stroke: #ffffff !important;
+            stroke-width: 0.5px !important;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+        }
+    }
+
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
 
   glyph_urls:
