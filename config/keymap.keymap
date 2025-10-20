@@ -138,10 +138,10 @@
         function {
             display-name = "Function";
             bindings = <
-  &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT_ARROW))  &trans            &trans  &kp C_BRI_MIN  &kp C_BRI_DN  &kp C_BRI_UP       &kp RG(C_BRI_MAX)
-  &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans    &trans  &trans         &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp RG(RA(K))
-  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans         &kp F4        &kp F5             &kp F10            &kp F12
-  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans         &trans        &trans             &trans             &trans
+  &trans  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT_ARROW))  &trans            &trans  &kp C_BRIGHTNESS_MINIMUM  &kp C_BRI_DN  &kp C_BRI_UP       &kp C_BRIGHTNESS_MAXIMUM
+  &trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans    &trans  &trans                    &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp RG(RA(K))
+  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans                    &kp F4        &kp F5             &kp F10                   &kp F12
+  &trans  &trans                  &trans              &trans                   &trans  &trans    &trans  &trans                    &trans        &trans             &trans                    &trans
             >;
         };
 
