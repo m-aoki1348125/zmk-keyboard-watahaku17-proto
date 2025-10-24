@@ -19,7 +19,15 @@
       "mcp__serena__search_for_pattern",
       "Read(//mnt/c/work/keyboard/watahaku-17/**)",
       "Bash(keymap dump-config:*)",
-      "Bash(git diff:*)"
+      "Bash(git diff:*)",
+      "Read(//root/zmk-workspace/**)",
+      "Bash(nix develop --extra-experimental-features \"nix-command flakes\" --command just init config/watahaku-17)",
+      "Read(//nix/store/hlc00f4gn52nrpky7bgb762ia0llz98v-nix-2.32.1/etc/profile.d/**)",
+      "Bash(west init -l config --mf watahaku-17/west.yml)",
+      "Bash(west zephyr-export)",
+      "Bash(west update --fetch-opt=--filter=blob:none)",
+      "Bash(export PATH=\"/nix/var/nix/profiles/default/bin:$PATH\")",
+      "Bash(nix develop --extra-experimental-features \"nix-command flakes\" --command just list)"
     ],
     "deny": [],
     "ask": []
