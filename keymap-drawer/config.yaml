@@ -9,7 +9,7 @@ parse_config:
     '&mkp RCLK': Right Click
     '&mkp MCLK': Middle Click
     '&mkp MB3': Middle
-    '&mkp MB2': Middle
+    '&mkp MB2': Right
     '&mkp MB1': Left
     '&bt BT_CLR': BT Clear
     '&bt BT_CLR_ALL': BT Clear All
