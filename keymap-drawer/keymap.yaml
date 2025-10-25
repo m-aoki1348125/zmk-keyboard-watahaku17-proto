@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: Mouse}
+  - {t: ⏎, h: Scroll}
   - N
   - M
   - ','
@@ -49,16 +49,16 @@ layers:
   - Ctl+AltGr+Shift
   Mouse:
   - {t: ▽, type: trans}
-  - Alt+←
-  - Middle
-  - Alt+→
-  - Gui+↹
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Scroll
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Middle
   - Left
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,7 +105,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -171,7 +171,7 @@ layers:
   - Ctl+Y
   - Settings
   - {t: ▽, type: trans}
-  - '0'
+  - ':'
   - '1'
   - '2'
   - '3'
@@ -185,7 +185,7 @@ layers:
   - {t: 英数, h: Function}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ':'
+  - '0'
   - .
   - {t: ▽, type: trans}
   Symbol:

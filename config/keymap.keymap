@@ -68,7 +68,7 @@
             compatible = "zmk,input-processor-temp-layer";
             #input-processor-cells = <2>;
             require-prior-idle-ms = <500>;
-            excluded-positions = <1 2 3 4 10 12 13>;   // Don't deactivate layer on combo keys and MINUS key
+            excluded-positions = <12 13>;   // Don't deactivate layer on combo keys and MINUS key
         };
     };
 
@@ -80,7 +80,7 @@
             bindings = <
   &kp Q      &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
   &kp A      &kp S          &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
-  &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 1 ENTER    &kp N          &kp M    &kp COMMA      &kp PERIOD           &mt RIGHT_SHIFT SLASH
+  &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 2 ENTER    &kp N          &kp M    &kp COMMA      &kp PERIOD           &mt RIGHT_SHIFT SLASH
   &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
             >;
         };
@@ -88,10 +88,10 @@
         mouse {
             display-name = "Mouse";
             bindings = <
-  &trans  &kp LA(LEFT_ARROW)  &mkp MB3  &kp LA(RIGHT_ARROW)  &kp LG(TAB)            &trans  &trans  &kp PAGE_UP  &trans         &trans
-  &mo 2   &trans              &mkp MB2  &mkp MB1             &trans       &trans    &trans  &trans  &trans       &kp PAGE_DOWN  &trans  &trans
-  &trans  &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
-  &trans  &trans              &trans    &trans               &trans       &trans    &trans  &trans  &trans       &trans         &trans  &trans
+  &trans  &trans  &trans    &trans    &trans            &trans  &trans  &kp PAGE_UP  &trans         &trans
+  &trans  &trans  &mkp MB2  &mkp MB1  &trans  &trans    &trans  &trans  &trans       &kp PAGE_DOWN  &trans  &trans
+  &trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans       &trans         &trans  &trans
+  &trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans  &trans       &trans         &trans  &trans
             >;
         };
 
@@ -110,8 +110,8 @@
             bindings = <
   &kp LS(LEFT_ARROW)  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)            &kp ASTRK    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
   &kp HOME            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END              &trans    &trans       &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-  &kp LC(Z)           &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(Y)            &mo 6     &trans       &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-  &kp LC(S)           &kp LC(A)           &trans          &trans               &trans               &trans    &lt 5 LANG1  &trans        &trans        &kp COLON     &kp PERIOD    &trans
+  &kp LC(Z)           &kp LC(X)           &kp LC(C)       &kp LC(V)            &kp LC(Y)            &mo 6     &trans       &kp COLON     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+  &kp LC(S)           &kp LC(A)           &trans          &trans               &trans               &trans    &lt 5 LANG1  &trans        &trans        &kp N0        &kp PERIOD    &trans
             >;
         };
 
