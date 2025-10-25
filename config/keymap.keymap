@@ -120,7 +120,7 @@
             bindings = <
   &trans     &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE                  &kp PLUS  &kp PERCENT   &kp AMPERSAND    &kp CARET      &trans
   &kp TILDE  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &trans         &trans    &kp SLASH     &kp DOLLAR       &kp LESS_THAN  &kp GREATER_THAN  &kp UNDERSCORE
-  &trans     &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &trans         &trans    &kp ASTERISK  &kp EXCLAMATION  &kp COMMA      &kp HASH          &kp BACKSLASH
+  &trans     &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &trans         &trans    &kp ASTERISK  &kp EXCLAMATION  &kp AT         &kp HASH          &kp BACKSLASH
   &trans     &trans         &trans                &trans                 &trans             &lt 5 LANG1    &trans    &trans        &trans           &trans         &trans            &trans
             >;
         };
@@ -142,15 +142,6 @@
   &tog_ls  &bt BT_SEL 4  &trans        &trans        &trans  &bt BT_CLR_ALL    &trans  &trans          &trans  &trans  &trans  &trans
   &trans   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
   &trans   &bt BT_SEL 0  &trans        &trans        &trans  &trans            &trans  &trans          &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
