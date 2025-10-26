@@ -285,8 +285,8 @@ layers:
   Settings:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
@@ -294,8 +294,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: JIS, h: toggle}
+  - BT 4
   - BT 5
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT Clear All
@@ -306,9 +306,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - BT 1
   - BT 2
   - BT 3
-  - BT 4
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -318,7 +318,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT 1
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
