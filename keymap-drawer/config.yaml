@@ -187,7 +187,7 @@ draw_config:
   shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
-  inner_pad_w: 4
+  inner_pad_w: 3
   inner_pad_h: 3
 
   dark_mode: auto
