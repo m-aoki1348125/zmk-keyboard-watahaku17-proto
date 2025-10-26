@@ -12,6 +12,7 @@ text.label {
     stroke: #000000 !important;
     stroke-width: 0.5px !important;
     paint-order: stroke fill !important;
+    text-anchor: middle !important;
 }
 
 @media (prefers-color-scheme: dark) {
