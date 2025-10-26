@@ -187,8 +187,8 @@ draw_config:
   shrink_wide_legends: 5
   glyph_tap_size: 14
   glyph_hold_size: 12
-  inner_pad_w: 2
-  inner_pad_h: 2
+  inner_pad_w: 4
+  inner_pad_h: 3
 
   dark_mode: auto
 
@@ -196,6 +196,12 @@ draw_config:
     /* Custom styling */
     svg.keymap {
         font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    }
+
+    /* Key text alignment fix */
+    text.tap, text.hold {
+        dominant-baseline: central;
+        text-anchor: middle;
     }
 
     /* Layer label visibility improvements */
