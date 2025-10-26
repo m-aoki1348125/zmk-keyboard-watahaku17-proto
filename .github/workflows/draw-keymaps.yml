@@ -1,9 +1,6 @@
 # Draw keymap diagrams using keymap-drawer
 name: Draw ZMK keymaps
 on:
-  workflow_run:
-    workflows: ["Build ZMK firmware"]
-    types: [completed]
   workflow_dispatch:
   push:
     paths:
@@ -12,7 +9,7 @@ on:
 
 jobs:
   draw:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' }}
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
