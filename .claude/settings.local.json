@@ -27,7 +27,19 @@
       "Bash(west zephyr-export)",
       "Bash(west update --fetch-opt=--filter=blob:none)",
       "Bash(export PATH=\"/nix/var/nix/profiles/default/bin:$PATH\")",
-      "Bash(nix develop --extra-experimental-features \"nix-command flakes\" --command just list)"
+      "Bash(nix develop --extra-experimental-features \"nix-command flakes\" --command just list)",
+      "mcp__serena__write_memory",
+      "Bash(git clone:*)",
+      "Bash(grep:*)",
+      "Bash(find boards/shields/watahaku_17 -name \"*.overlay\" -exec echo \"=== {} ===\" ; -exec head -30 {} ;)",
+      "Bash(test:*)",
+      "Bash(west init:*)",
+      "Bash(west update:*)",
+      "Bash(timeout 600 bash:*)",
+      "Bash(west build:*)",
+      "Bash(ZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb GNUARMEMB_TOOLCHAIN_PATH=/usr west build:*)",
+      "Bash(find:*)",
+      "Bash(tee:*)"
     ],
     "deny": [],
     "ask": []

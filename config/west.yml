@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
-    - name: kot149
-      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,6 +12,7 @@ manifest:
     - name: zmk-component-bmp-boost
       remote: sekigon-gonnoc
       import: west.yml
+      revision: v0.2
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
       revision: main
@@ -22,12 +21,9 @@ manifest:
       revision: main
     - name: zmk-feature-cdc-acm-bootloader-trigger
       remote: sekigon-gonnoc
-      revision: main
+      revision: v0.2
     - name: zmk-feature-non-lipo-battery-management
       remote: sekigon-gonnoc
       revision: main
-    - name: zmk-scroll-snap
-      remote: kot149
-      revision: v1
   self:
     path: config
