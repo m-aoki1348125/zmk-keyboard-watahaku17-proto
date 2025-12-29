@@ -1,4 +1,5 @@
 include:
+  # Left hand central configuration with left trackball
   - board: bmp_boost
     shield: watahaku_17_left
     snippet: studio-rpc-usb-uart
@@ -8,26 +9,29 @@ include:
     shield: watahaku_17_right
     snippet: studio-rpc-usb-uart
     artifact-name: watahaku_17_right_peripheral
-    
-  - board: bmp_boost
-    shield: watahaku_17_left
-    snippet: studio-rpc-usb-uart
-    artifact-name: watahaku_17_left_peripheral
-  - board: bmp_boost
-    shield: watahaku_17_right
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-    artifact-name: watahaku_17_right_central
 
-  - board: bmp_boost
-    shield: watahaku_17_left
-    snippet: "studio-rpc-usb-uart split-trackball"
-    artifact-name: watahaku_17_double_ball_left_peripheral
-  - board: bmp_boost
-    shield: watahaku_17_right
-    snippet: "studio-rpc-usb-uart split-trackball-listner"
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
-    artifact-name: watahaku_17_double_ball_right_central
+  # Right hand central configuration (commented out)
+  # - board: bmp_boost
+  #   shield: watahaku_17_left
+  #   snippet: studio-rpc-usb-uart
+  #   artifact-name: watahaku_17_left_peripheral
+  # - board: bmp_boost
+  #   shield: watahaku_17_right
+  #   snippet: studio-rpc-usb-uart
+  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+  #   artifact-name: watahaku_17_right_central
 
+  # Double trackball configuration (commented out)
+  # - board: bmp_boost
+  #   shield: watahaku_17_left
+  #   snippet: "studio-rpc-usb-uart split-trackball"
+  #   artifact-name: watahaku_17_double_ball_left_peripheral
+  # - board: bmp_boost
+  #   shield: watahaku_17_right
+  #   snippet: "studio-rpc-usb-uart split-trackball-listner"
+  #   cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+  #   artifact-name: watahaku_17_double_ball_right_central
+
+  # Settings reset utility
   - board: bmp_boost
     shield: settings_reset
