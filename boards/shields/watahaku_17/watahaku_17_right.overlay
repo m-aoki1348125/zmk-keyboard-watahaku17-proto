@@ -44,11 +44,11 @@
 };
 
 &trackball_listener {
-    // Normal mode: Half speed (0.5x) with threshold filtering
+    // Normal mode: Quarter speed (0.25x) with threshold filtering
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &zip_threshold_filter 1 5    // Reduce to 20%: movements < 5 become 0
-        &zip_restore_scaler 5 2      // Restore to 0.5x (0.2 × 2.5 = 0.5)
+        &zip_restore_scaler 5 4      // Restore to 0.25x (0.2 × 1.25 = 0.25)
         &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
     >;
 
@@ -59,8 +59,8 @@
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
             &zip_scroll_snap           // Snap scroll to nearest axis
-            &zip_scroll_x_scaler 1 85  // X-axis: 1/85x scroll speed (3/4 of original: 64 × 4/3 ≈ 85)
-            &zip_scroll_y_scaler 1 32  // Y-axis: 1/32x scroll speed (3/4 of original: 24 × 4/3 = 32)
+            &zip_scroll_x_scaler 1 170 // X-axis: 1/170x scroll speed (half of original 1/85)
+            &zip_scroll_y_scaler 1 64  // Y-axis: 1/64x scroll speed (half of original 1/32)
         >;
     };
 };
