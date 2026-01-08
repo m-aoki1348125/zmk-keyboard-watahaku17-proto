@@ -27,6 +27,34 @@
         };
     };
 
+    macros {
+        mo_num_hankaku: mo_num_hankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo 3>      // numレイヤー(Layer 3)有効化
+                , <&macro_tap &kp LANG2>    // LANG2（半角）送信
+                , <&macro_pause_for_release>
+                , <&macro_release &mo 3>
+                ;
+        };
+
+        mo_symbol_hankaku: mo_symbol_hankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo 4>      // symbolレイヤー(Layer 4)有効化
+                , <&macro_tap &kp LANG1>    // LANG1（半角）送信
+                , <&macro_pause_for_release>
+                , <&macro_release &mo 4>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -81,7 +109,7 @@
   &kp Q      &kp W          &kp E   &kp R   &kp T                           &kp Y          &kp U          &kp I    &kp O          &kp P
   &kp A      &kp S          &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))  &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
   &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 2 ENTER    &kp N          &kp M    &kp COMMA      &kp PERIOD           &mt RIGHT_SHIFT SLASH
-  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &lt 3 LANG2             &lt 4 LANG1    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
+  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &mo_num_hankaku         &mo_symbol_hankaku    &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
             >;
         };
 
