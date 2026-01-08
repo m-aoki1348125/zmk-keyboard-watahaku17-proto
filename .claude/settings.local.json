@@ -22,7 +22,10 @@
       "Bash(curl:*)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "Read(//dev/**)",
-      "Read(//mnt/c/**)"
+      "Read(//mnt/c/**)",
+      "Bash(git push)",
+      "mcp__serena__initial_instructions",
+      "WebFetch(domain:peccu.github.io)"
     ],
     "deny": [],
     "ask": []
