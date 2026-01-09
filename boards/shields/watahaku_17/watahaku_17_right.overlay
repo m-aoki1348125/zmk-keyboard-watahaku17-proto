@@ -52,9 +52,9 @@
         &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
     >;
 
-    // Layer 2: Scroll mode
+    // Layer 2, 3, 4: Scroll mode
     scroller {
-        layers = <2>;
+        layers = <2 3 4>;
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
