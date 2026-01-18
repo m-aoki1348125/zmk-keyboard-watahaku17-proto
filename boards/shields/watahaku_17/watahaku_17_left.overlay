@@ -49,7 +49,7 @@
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &zip_threshold_filter 1 5    // Reduce to 20%: movements < 5 become 0
         &zip_restore_scaler 5 2      // Restore to 0.5x (0.2 × 2.5 = 0.5)
-        &auto_mouse_layer 1 2000     // Activate layer 1 only if movement > threshold
+        &auto_mouse_layer 1 1000     // Activate layer 1 for 1 second
     >;
 
     // Layer 2, 3, 4: Scroll mode
