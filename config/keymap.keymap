@@ -48,7 +48,7 @@
             tap-ms = <0>;
             bindings
                 = <&macro_press &mo 4>      // symbolレイヤー(Layer 4)有効化
-                , <&macro_tap &kp LANG1>    // LANG1（半角）送信
+                , <&macro_tap &kp LANG2>    // LANG2（半角）送信
                 , <&macro_pause_for_release>
                 , <&macro_release &mo 4>
                 ;
