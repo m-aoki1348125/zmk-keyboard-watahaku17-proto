@@ -59,7 +59,7 @@
             &zip_xy_transform INPUT_TRANSFORM_X_INVERT
             &zip_xy_to_scroll_mapper
             &zip_scroll_snap           // Snap scroll to nearest axis
-            &zip_scroll_x_scaler 1 170 // X-axis: 1/170x scroll speed (half of original 1/85)
+            &zip_scroll_x_scaler 1 128 // X-axis: 1/128x scroll speed (half of Y-axis speed)
             &zip_scroll_y_scaler 1 64  // Y-axis: 1/64x scroll speed (half of original 1/32)
         >;
     };
