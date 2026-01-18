@@ -111,6 +111,11 @@
             bindings = <&kp COLON>;
             key-positions = <31 32>;
         };
+
+        btcl {
+            bindings = <&bt BT_CLR>;
+            key-positions = <16 9 45>;
+        };
     };
 
     // Auto mouse layer configuration
