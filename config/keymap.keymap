@@ -25,6 +25,24 @@
             #binding-cells = <1>;
             label = "LAYOUT_SHIFT_KEY_PRESS";
         };
+
+        // Hold-tap for num layer: hold=layer+LANG2, tap=configurable
+        ht_num: ht_num {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo_num_hankaku>, <&kp>;
+        };
+
+        // Hold-tap for symbol layer: hold=layer+LANG2, tap=configurable
+        ht_symbol: ht_symbol {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo_symbol_hankaku>, <&kp>;
+        };
     };
 
     macros {
@@ -111,7 +129,7 @@
   &kp Q      &kp W          &kp E   &kp R   &kp T                           &kp Y               &kp U          &kp I    &kp O          &kp P
   &kp A      &kp S          &kp D   &kp F   &kp G   &kp ESCAPE              &kp RS(RG(S))       &kp H          &kp J    &kp K          &kp L                &mt RCTRL MINUS
   &kp Z      &kp X          &kp C   &kp V   &kp B   &mt LEFT_SHIFT SPACE    &lt 2 ENTER         &kp N          &kp M    &kp COMMA      &kp PERIOD           &mt RIGHT_SHIFT SLASH
-  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &mo_num_hankaku         &mo_symbol_hankaku  &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
+  &kp LCTRL  &kp RIGHT_GUI  &trans  &trans  &trans  &ht_num 0 LANG2         &ht_symbol 0 LANG1  &kp BACKSPACE  &kp DEL  &kp RIGHT_ALT  &kp RC(RIGHT_SHIFT)  &kp RC(RA(RIGHT_SHIFT))
             >;
         };
 
