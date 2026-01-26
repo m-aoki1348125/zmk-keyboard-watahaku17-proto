@@ -83,7 +83,7 @@
         compatible = "zmk,combos";
 
         bt_clear {
-            bindings = <&bt BT_CLR>;
+            bindings = <&bt BT_CLR_ALL>;
             key-positions = <0 15 34>;
         };
 
@@ -110,6 +110,11 @@
         colon {
             bindings = <&kp COLON>;
             key-positions = <31 32>;
+        };
+
+        btcl {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <16 9 45>;
         };
     };
 

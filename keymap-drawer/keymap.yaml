@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - {t: ␣, h: Shift}
-  - {t: ⏎, h: Scroll}
+  - {t: ⏎, h: Mouse}
   - N
   - M
   - ','
@@ -40,8 +40,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: かな, h: Number}
-  - {t: 英数, h: Symbol}
+  - {t: かな, h: '&mo_num_hankaku'}
+  - {t: 英数, h: '&mo_symbol_hankaku'}
   - ⌫
   - ⌦
   - RIGHT ALT
@@ -50,12 +50,12 @@ layers:
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Middle
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -67,7 +67,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -77,6 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,8 +181,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: 英数, h: Function}
+  - {t: ▽, type: trans}
+  - Function
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
@@ -228,8 +228,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: 英数, h: Function}
-  - {type: held}
+  - Function
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -275,7 +275,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -322,7 +322,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -331,7 +331,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [0, 15, 34]
-  k: BT Clear
+  k: BT Clear All
   a: bottom
   draw_separate: true
 - p: [12, 13]
@@ -352,3 +352,5 @@ combos:
   draw_separate: true
 - p: [31, 32]
   k: ':'
+- p: [16, 9, 45]
+  k: BT Clear All
