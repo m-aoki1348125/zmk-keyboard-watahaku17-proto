@@ -63,6 +63,10 @@
             gpios = <&bmp 2 GPIO_ACTIVE_HIGH>;
             label = "Status LED";
         };
+        blue_led: blue_led {
+            gpios = <&bmp 20 GPIO_ACTIVE_HIGH>;
+            label = "Blue LED";
+        };
     };
 
     status_led_device: status_led_device {
