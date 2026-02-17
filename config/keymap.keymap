@@ -118,17 +118,6 @@
         };
     };
 
-    // Auto mouse layer configuration
-
-    input_processors {
-        auto_mouse_layer: auto_mouse_layer {
-            compatible = "zmk,input-processor-temp-layer";
-            #input-processor-cells = <2>;
-            require-prior-idle-ms = <500>;
-            excluded-positions = <12 13>;   // Don't deactivate layer on combo keys and MINUS key
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 

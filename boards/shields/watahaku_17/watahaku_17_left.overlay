@@ -7,13 +7,24 @@
 #include <scroll-snap.dtsi>
 
 / {
-    auto_mouse_layer: auto_mouse_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        excluded-positions = <0>;
+    chosen {
+        zmk,studio-rpc-uart = &cdc_acm_uart;
     };
+};
 
+&zephyr_udc0 {
+    cdc_acm_uart: cdc_acm_uart {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
+
+/ {
     input_processors {
+        auto_mouse_layer: auto_mouse_layer {
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+            excluded-positions = <12 13>;
+        };
         zip_scroll_x_scaler: zip_scroll_x_scaler {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
